@@ -16,7 +16,6 @@ class CollectPage extends StatefulWidget {
 
 class _CollectPageState extends State<CollectPage>
     with AutomaticKeepAliveClientMixin {
-
   final _tabs = [
     '收藏集录',
     '默认收藏',
@@ -38,10 +37,10 @@ class _CollectPageState extends State<CollectPage>
                 SliverOverlapAbsorber(
                     handle: NestedScrollView.sliverOverlapAbsorberHandleFor(
                         context),
-                    sliver: _buildAppBar(_topContext, innerBoxIsScrolled)),
+                    child: _buildAppBar(_topContext, innerBoxIsScrolled)),
               ];
             },
-            body:  TabBarView(
+            body: TabBarView(
               children: <Widget>[
                 CategoryPage(),
                 DefaultCollectPage(),
@@ -56,7 +55,7 @@ class _CollectPageState extends State<CollectPage>
       leading: Container(
           margin: EdgeInsets.all(10),
           child: FeedbackWidget(
-            onPressed: (){
+            onPressed: () {
               Navigator.of(context).pushNamed(Router.login);
             },
             child: CircleImage(

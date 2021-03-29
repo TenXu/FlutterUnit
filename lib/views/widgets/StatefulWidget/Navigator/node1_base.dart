@@ -21,7 +21,7 @@ class NavigatorDemo extends StatelessWidget {
       height: 200,
       width: 300,
       child: Navigator(
-        onPopPage: _onPopPage,
+        //onPopPage: _onPopPage,
         initialRoute: '/home-content',
         onGenerateRoute: _onGenerateRoute,
         observers: [TolyNavigatorObservers()],

@@ -32,6 +32,7 @@ class BlocWrapper extends StatelessWidget {
           create: (_) => HomeBloc(repository: repository)
             ..add(EventTabTap(WidgetFamily.statelessWidget))),
 
+      //详情页面
       BlocProvider<DetailBloc>(
           create: (_) => DetailBloc(repository: repository)),
       BlocProvider<CategoryBloc>(
@@ -43,6 +44,7 @@ class BlocWrapper extends StatelessWidget {
           create: (_) =>
               CollectBloc(repository: repository)..add(EventSetCollectData())),
 
+      //去搜索页面
       BlocProvider<SearchBloc>(
           create: (_) => SearchBloc(repository: repository)),
     ], child: child);
