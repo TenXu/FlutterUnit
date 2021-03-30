@@ -31,7 +31,7 @@ class SliverOverlapAbsorberDemo extends StatelessWidget {
                 return <Widget>[
                   SliverOverlapAbsorber(
                     handle: NestedScrollView.sliverOverlapAbsorberHandleFor(context),
-                    child: SliverAppBar(
+                    sliver: SliverAppBar(
                       title: const Text('旷古奇书'),
                       pinned: true,
                       elevation: 6, //影深

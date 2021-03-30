@@ -37,7 +37,7 @@ class _CollectPageState extends State<CollectPage>
                 SliverOverlapAbsorber(
                     handle: NestedScrollView.sliverOverlapAbsorberHandleFor(
                         context),
-                    child: _buildAppBar(_topContext, innerBoxIsScrolled)),
+                    sliver: _buildAppBar(_topContext, innerBoxIsScrolled)),
               ];
             },
             body: TabBarView(
@@ -56,7 +56,7 @@ class _CollectPageState extends State<CollectPage>
           margin: EdgeInsets.all(10),
           child: FeedbackWidget(
             onPressed: () {
-              Navigator.of(context).pushNamed(Router.login);
+              Navigator.of(context).pushNamed(Routers.login);
             },
             child: CircleImage(
               image: AssetImage('assets/images/icon_head.png'),

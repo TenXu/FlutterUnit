@@ -24,7 +24,7 @@ class CustomMaterialApp extends StatelessWidget {
       height: MediaQuery.of(context).size.height - 200,
       child: MaterialApp(
         title: 'Flutter Demo',
-        onGenerateRoute: Router.generateRoute,
+        onGenerateRoute: Routers.generateRoute,
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),

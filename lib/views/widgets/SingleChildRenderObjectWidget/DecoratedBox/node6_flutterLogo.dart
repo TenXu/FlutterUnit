@@ -15,8 +15,7 @@ class FlutterLogoDecorationDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: FlutterLogoDecoration(
-          darkColor: Colors.orange,
-          lightColor: Colors.deepPurpleAccent,
+          textColor: Colors.orange,
           style: FlutterLogoStyle.stacked),
       child: SizedBox(
         width: 100,

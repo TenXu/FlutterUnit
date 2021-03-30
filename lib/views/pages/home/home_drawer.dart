@@ -27,14 +27,14 @@ class HomeDrawer extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: <Widget>[
             UnitDrawerHeader(color: color),
-            _buildItem(context, TolyIcon.icon_them, '应用设置', Router.setting),
+            _buildItem(context, TolyIcon.icon_them, '应用设置', Routers.setting),
             _buildItem(context, TolyIcon.icon_layout, '数据统计', null),
             Divider(height: 1),
             _buildFlutterUnit(context),
             _buildItem(context, TolyIcon.icon_code, 'Dart 手册', null),
             Divider(height: 1),
-            _buildItem(context, Icons.info, '关于应用', Router.about_app),
-            _buildItem(context, TolyIcon.icon_kafei, '联系本王', Router.about_me),
+            _buildItem(context, Icons.info, '关于应用', Routers.about_app),
+            _buildItem(context, TolyIcon.icon_kafei, '联系本王', Routers.about_me),
           ],
         ),
       );
@@ -47,10 +47,10 @@ class HomeDrawer extends StatelessWidget {
         ),
         title: Text('Flutter 集录'),
         children: <Widget>[
-          _buildItem(context, TolyIcon.icon_tag, '属性集录', Router.attr),
-          _buildItem(context, Icons.palette, '绘画集录', Router.paint),
-          _buildItem(context, Icons.widgets, '布局集录', Router.layout),
-          _buildItem(context, TolyIcon.icon_bug, '要点集录', Router.bug),
+          _buildItem(context, TolyIcon.icon_tag, '属性集录', Routers.attr),
+          _buildItem(context, Icons.palette, '绘画集录', Routers.paint),
+          _buildItem(context, Icons.widgets, '布局集录', Routers.layout),
+          _buildItem(context, TolyIcon.icon_bug, '要点集录', Routers.bug),
         ],
       );
 

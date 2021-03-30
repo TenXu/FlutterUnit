@@ -27,7 +27,7 @@ class BugUnitPage extends StatelessWidget {
               children: <Widget>[
                 FeedbackWidget(
                   onPressed: (){
-                    Navigator.of(context).pushNamed(Router.issues_point);
+                    Navigator.of(context).pushNamed(Routers.issues_point);
                   },
                   child: CircleImage(
                     image: AssetImage('assets/images/icon_head.png'),
